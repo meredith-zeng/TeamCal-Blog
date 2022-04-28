@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 
-class blogmodel extends Model{
+class Blogmodel extends Model{
     protected $table = 'post';
     protected $primKey = 'id';
     protected $allowedFields = ['title', 'description', 'image', 'tag'];

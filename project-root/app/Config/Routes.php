@@ -35,7 +35,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Page::index');
 $routes->get('/blog/create', 'Blog::create');
 $routes->get('/blog/(:any)', 'Page::post/$1');
-$routes->get('/all_blogs', 'Page::all_blogs');
+$routes->get('/blogList', 'Page::blogList');
 $routes->get('(:any)', 'Page::showme/$1');
 
 /*
