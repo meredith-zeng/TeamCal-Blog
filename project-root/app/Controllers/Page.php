@@ -4,9 +4,9 @@ use App\Models\Blogmodel;
 
 class Page extends BaseController
 {
-	public function index(){
+	public function home(){
 		$model = new Blogmodel();
-		$data['news'] = $model->getPost();
+		$data['topPosts'] = $model->getPost();
 		echo view('template/header', $data);
 		echo view('page/home');
 		echo view('template/footer');
@@ -16,7 +16,7 @@ class Page extends BaseController
         $model= new Blogmodel();
         $data['post'] = $model->getPost($id);
         echo view('template/header', $data);
-        echo view('blog/post', $data);
+        echo view('blog/post');
         echo view('template/footer');
     }
 

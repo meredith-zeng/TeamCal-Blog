@@ -14,14 +14,13 @@ $session = \Config\Services:: session();
     <section class='blog-section'>
       <div class="container">
         <?php if ($table): ?>
-            <?php $i = 1 + (6 * ($currentPage - 1)); ?>
             <?php foreach ($table as $p): ?>
               <div class="card mb-4">
                 <div class="card-body">
                   <h2 class="card-post-title"><?= $p['title']; ?></h2>
                     <p class="card-post-subtitle"><?= mb_substr($p['description'], 0, 220) ?> ...</p>
                     <p>
-                        <a href="/blog/<?= $p['id'] ?>" class="stretched-link">Continue &raquo;</a>
+                        <a href="/blog/<?= $p['id'] ?>" class="stretched-link">Read More >></a>
                     </p>
                 </div>
                    <div class="card-footer">
